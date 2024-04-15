@@ -1,0 +1,40 @@
+import { FiThumbsUp } from 'react-icons/fi'
+import React from 'react'
+
+import { 
+  CardContainer,
+  ImageBackground,
+  Content,
+  UserInfo,
+  UserPicture,
+  PostInfo,
+  HasInfo,
+} from './styles'
+const Card = () => {
+  return (
+    <CardContainer>
+      <ImageBackground src="data:image/jpeg;base64,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"/>
+      <Content>
+        <UserInfo>
+          <UserPicture src="https://avatars.githubusercontent.com/u/141252102?v=4"/>
+         <div>
+          <h4>Sony Mainardi</h4>
+          <p>Há 5 minutos</p>
+        </div> 
+        </UserInfo>
+        <PostInfo>
+          <h4>Projeto para curso de REACT </h4>
+          <p>Projeto feito no curso de REACT no bootcamp da DIO...<strong>Saiba Mais</strong></p>
+        </PostInfo>
+        <HasInfo>
+          <h4>#HTML #CSS #Javascript</h4>
+          <p>
+            <FiThumbsUp />23423
+          </p>
+        </HasInfo>
+      </Content>
+    </CardContainer>
+  )
+}
+
+export { Card }
